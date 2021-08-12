@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%- title %></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="sidenav d-flex flex-column justify-content-between ps-5">
+      <div class="sidenav-grp">
+        <div class="sidenav-logo pt-4 pb-3">
+          <img src="./assets/images/logo.png" alt="logo">
+        </div>
+        <ul class="sidenav-link">
+          <li class="d-flex align-items-center pb-3">
+            <span class="material-icons me-3">assessment</span>
+            <a href="#">Dashboard</a>
+          </li>
+          <li class="d-flex align-items-center pb-3"><span class="material-icons me-3">
+        question_answer
+        </span><a href="#">Question</a></li>
+          <li class="d-flex align-items-center pb-3"><span class="material-icons me-3">
+        assignment
+        </span><a href="#">Assignment</a></li>
+          <li class="d-flex align-items-center pb-3"><span class="material-icons me-3">
+        video_library
+        </span><a href="#">Course</a></li>
+          <li class="d-flex align-items-center pb-3"><span class="material-icons me-3">
+        people
+        </span><a href="#">Admin</a></li>
+          <li class="d-flex align-items-center pb-3"><span class="material-icons me-3">
+        settings
+        </span><a href="#">Settings</a></li>
+        </ul>
+      </div>
+      <div class="sidenav-author d-flex ">
+        <img class="rounded-circle me-2" src="./assets/images/author.jfif" alt="author">
+        <ul class="sidenav-author-card">
+          <li class="sidenav-author-name pb-2">Andy Chen</li>
+          <li class="sidenav-author-email">andy0401@mail.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <%- contents %>
+
+    
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>

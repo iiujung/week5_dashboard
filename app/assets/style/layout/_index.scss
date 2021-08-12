@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: lato, "roboto mono", sans-serif;
+}
+
+.sidenav {
+  padding: 16px;
+  background-color: #eee;
+  width: 296px;
+  height: 100vh;
+  &-author {
+    img {
+      width: 40px;
+      height: 40px;
+    }
+    &-name {
+      font-weight: bold;
+    }
+  }
+}
