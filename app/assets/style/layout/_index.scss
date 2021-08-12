@@ -4,16 +4,43 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
 body {
   background-color: #fff;
   font-family: lato, "roboto mono", sans-serif;
 }
 
+
+
+main {
+  margin-left: 200px;
+}
+
 .sidenav {
-  padding: 16px;
+  position: fixed;
   background-color: #eee;
   width: 296px;
   height: 100vh;
+  &-link {
+    li {
+      position: relative;
+      padding-left: 16px;
+      &.active::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 50px;
+        width: 4px;
+        border-left: 4px solid #198754;
+      }
+    }
+
+  }
   &-author {
     img {
       width: 40px;
@@ -22,5 +49,34 @@ body {
     &-name {
       font-weight: bold;
     }
+  }
+}
+
+.pagenav {
+  padding: 32px 5px;
+  &-title {
+  h1 {
+    font-size: 24px;
+  }
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+  }
+  
+}
+
+}
+
+
+.page-link {
+  border: 1px solid #198754;
+  &:hover, &.active {
+    color: #fff;
+    background-color: #198754;
   }
 }

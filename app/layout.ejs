@@ -24,43 +24,43 @@
   </head>
 
   <body>
-    <div class="sidenav d-flex flex-column justify-content-between ps-5">
+    <div class="sidenav d-flex flex-column justify-content-between">
       <div class="sidenav-grp">
         <div class="sidenav-logo pt-4 pb-3">
           <img src="./assets/images/logo.png" alt="logo">
         </div>
-        <ul class="sidenav-link">
-          <li class="d-flex align-items-center pb-3">
+        <ul class="sidenav-link list-unstyled ">
+          <li class="d-flex align-items-center pb-3 pt-3">
             <span class="material-icons me-3">assessment</span>
             <a href="#">Dashboard</a>
           </li>
-          <li class="d-flex align-items-center pb-3"><span class="material-icons me-3">
+          <li class="d-flex align-items-center pb-3 pt-3"><span class="material-icons me-3">
         question_answer
         </span><a href="#">Question</a></li>
-          <li class="d-flex align-items-center pb-3"><span class="material-icons me-3">
+          <li class="d-flex align-items-center pb-3 pt-3"><span class="material-icons me-3">
         assignment
         </span><a href="#">Assignment</a></li>
-          <li class="d-flex align-items-center pb-3"><span class="material-icons me-3">
+          <li class="d-flex align-items-center pb-3 pt-3"><span class="material-icons me-3">
         video_library
         </span><a href="#">Course</a></li>
-          <li class="d-flex align-items-center pb-3"><span class="material-icons me-3">
+          <li class="d-flex align-items-center active  pb-3 pt-3"><span class="material-icons me-3">
         people
         </span><a href="#">Admin</a></li>
-          <li class="d-flex align-items-center pb-3"><span class="material-icons me-3">
+          <li class="d-flex align-items-center pb-3 pt-3"><span class="material-icons me-3">
         settings
         </span><a href="#">Settings</a></li>
         </ul>
       </div>
       <div class="sidenav-author d-flex ">
         <img class="rounded-circle me-2" src="./assets/images/author.jfif" alt="author">
-        <ul class="sidenav-author-card">
+        <ul class="sidenav-author-card list-unstyled">
           <li class="sidenav-author-name pb-2">Andy Chen</li>
           <li class="sidenav-author-email">andy0401@mail.com</li>
         </ul>
       </div>
     </div>
 
-    <%- contents %>
+    <main><%- contents %></main>
 
     
 
